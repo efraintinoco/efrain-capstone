@@ -1,0 +1,20 @@
+{
+  "tasks": [{
+    "id": 1,
+    "title": "Chairs",
+    "date": "string",
+    "comments": "Make sure to bring two chairs ",
+    "completed": "true"
+  },{
+    "title": "Tables",
+    "date": "04/21/2022",
+    "comments": "Bring 3 tables",
+    "completed": "true"
+  },{
+    "id": 3,
+    "title": "Cooler",
+    "date": "04/21/2022",
+    "comments": "Need the drank",
+    "completed": "False"
+  }]
+}

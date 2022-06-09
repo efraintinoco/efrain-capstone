@@ -12,12 +12,12 @@ type TasksResponse = {
   providedIn: 'root'
 })
 export class TaskService {
-  url: string ='../assets/tasks.json';
+   url: string ='../assets/tasks.json';
 
   constructor(private httpClient: HttpClient) { }
 
   getTasks(): Observable<TasksResponse> {
-    return this.httpClient.get<TasksResponse>(this.url);
+    return this.httpClient.get<TasksResponse>(this.url)
    }
 
 }

@@ -2,6 +2,7 @@
   font-weight: 500;
   padding: 10px 12px 0 12px;
   background: #f3f5fa;
+  color: navy;
 }
 .list {
   background: #f3f5fa;
@@ -14,7 +15,7 @@ mat-selection-list {
   padding: 15px;
 }
 mat-list-option {
-  background-color: white;
+  background-color: rgb(36, 105, 183);
   border-radius: 10px;
   margin: 10px 0 10px 0;
   padding: 10px;
@@ -26,5 +27,5 @@ mat-list-option {
   height: 70px !important;
 }
 .task-date {
-  color: #ccc;
+  color: rgb(202, 202, 202);
 }

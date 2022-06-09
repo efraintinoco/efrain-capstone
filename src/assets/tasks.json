@@ -2,7 +2,7 @@
   "tasks": [{
     "id": 1,
     "title": "Chairs",
-    "date": "string",
+    "date": "06/21/22",
     "comments": "Make sure to bring two chairs ",
     "completed": "true"
   },{

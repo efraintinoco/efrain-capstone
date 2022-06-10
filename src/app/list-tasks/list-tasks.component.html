@@ -13,7 +13,9 @@
             <span class="task-complete">
             {{ task.complete }}
           </span>
-
+          <span class="task-date">
+            {{ task.date | date: "mediumDate" }}
+          </span>
         </div>
         <span class="task-comment">
           {{ task.comment}}

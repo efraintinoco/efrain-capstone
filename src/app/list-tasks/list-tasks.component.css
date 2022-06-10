@@ -28,7 +28,7 @@ mat-list-option {
 .mat-list-item {
   height: 70px !important;
 }
-.task-complete {
+.task-date{
   color: rgb(150, 149, 149);
   float: right;
 }

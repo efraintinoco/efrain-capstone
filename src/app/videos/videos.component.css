@@ -3,9 +3,10 @@
   .video-1-container{
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 56%;
     height: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+
   }
   .video-1-container iframe{
     position: absolute;
@@ -17,11 +18,11 @@
   .video-2-container{
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 56%;
     height: 0;
-    margin-bottom: 40px;
-
+    margin-bottom: 35px;
   }
+
   .video-2-container iframe{
     position: absolute;
     top:0;
@@ -29,11 +30,13 @@
     width: 100%;
     height: 100%;
   }
+
   .video-3-container{
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 56%;
     height: 0;
+    margin-bottom: 35px;
   }
   .video-3-container iframe{
     position: absolute;

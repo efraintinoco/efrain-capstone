@@ -4,6 +4,7 @@
   background: #f3f5fa;
   color: hsl(208, 77%, 15%);
   margin: 0px;
+  text-align: center;
 }
 .list {
   background: #f3f5fa;
@@ -34,7 +35,6 @@ mat-list-option {
 
 .task-title{
 color:hsl(208, 77%, 15%) ;
-;
 }
 
 .task-comment{

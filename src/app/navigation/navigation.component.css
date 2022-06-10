@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  background: white;
+
+}
+
+button {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+

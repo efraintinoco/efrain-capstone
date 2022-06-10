@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../task.service';
 import { Task } from '../Task';
 import { observable } from 'rxjs';
+import { PopupComponent } from '../popup/popup.component';
 
 
 @Component({
@@ -18,6 +19,7 @@ export class ListTasksComponent implements OnInit {
   ngOnInit(): void {
     this.taskService.getTasks().subscribe(response => {
       this.tasks = response.tasks
-    })
+    });
+    
   }
 }

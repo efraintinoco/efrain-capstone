@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  taskEndpoint:'https://etinococapstone.herokuapp.com/api/tasks',
 };

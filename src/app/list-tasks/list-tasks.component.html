@@ -1,22 +1,22 @@
 <div class="list">
-  <h1>Tasks</h1>
+  <h1>Game Day Essentials</h1>
   <mat-selection-list [multiple]="false">
     <div class="mat-list-option-cover">
       <mat-list-option
         *ngFor="let task of tasks"
-
       >
         <div class="d-flex justify-content-between">
-          <span class="task-date">
-            {{ task.date | date: "mediumDate" }}
+
+          <span class="task-title">
+            {{ task.title }}
           </span>
-          <span class="task-date">
-            {{ task.completed }}
+            <span class="task-complete">
+            {{ task.complete }}
           </span>
+
         </div>
-        <span class="task-title">
-          {{ task.title.substring(0, 40) }}
-          {{ task.title.length > 40 ? "..." : "" }}
+        <span class="task-comment">
+          {{ task.comment}}
         </span>
       </mat-list-option>
     </div>

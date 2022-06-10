@@ -1,8 +1,9 @@
 .list h1 {
   font-weight: 500;
-  padding: 10px 12px 0 12px;
+  padding: 10px 0px 0 12px;
   background: #f3f5fa;
-  color: navy;
+  color: hsl(208, 77%, 15%);
+  margin: 0px;
 }
 .list {
   background: #f3f5fa;
@@ -15,8 +16,8 @@ mat-selection-list {
   padding: 15px;
 }
 mat-list-option {
-  background-color: rgb(36, 105, 183);
-  border-radius: 10px;
+  background-color: white;
+  border-radius: 3px;
   margin: 10px 0 10px 0;
   padding: 10px;
   height: 100%;
@@ -26,6 +27,16 @@ mat-list-option {
 .mat-list-item {
   height: 70px !important;
 }
-.task-date {
-  color: rgb(202, 202, 202);
+.task-complete {
+  color: rgb(150, 149, 149);
+  float: right;
+}
+
+.task-title{
+color:hsl(208, 77%, 15%) ;
+;
+}
+
+.task-comment{
+color: hsl(208, 77%, 35%);
 }

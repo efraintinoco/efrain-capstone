@@ -1,0 +1,47 @@
+#divWeatherMain{
+  display: block;
+  border-radius: 4px;
+  height: 200px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 0%, rgb(9,42,70) 100%);
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tempature{
+  font-size: 32px;
+  padding-top: 20px;
+  margin-top: 5px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.feels-like{
+  font-size: 12px;
+  margin-top: 5px;
+  margin: 0 auto;
+  width: fit-content;
+}
+.high-low{
+  font-size: 12px;
+  margin-top: 5px;
+  margin: 0 auto;
+  width: fit-content;
+}
+.city{
+  font-size: 35px;
+  margin-top: 5px;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 20px;
+}
+
+.tempature-heading{
+  font-size: 25px;
+  margin-top: 5px;
+  margin: 0 auto;
+  width: fit-content;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}

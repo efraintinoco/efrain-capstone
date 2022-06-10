@@ -16,6 +16,7 @@ import { PopupComponent } from './popup/popup.component';
 import { HeaderComponent } from './header/header.component';
 import { VideosComponent } from './videos/videos.component';
 import { AddTaskComponent } from './add-task/add-task.component';
+import { WeatherWidgetComponent } from './weather-widget/weather-widget.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AddTaskComponent } from './add-task/add-task.component';
     HeaderComponent,
     VideosComponent,
     AddTaskComponent,
+    WeatherWidgetComponent,
   ],
   imports: [
     BrowserModule,

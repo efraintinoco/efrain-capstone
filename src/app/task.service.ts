@@ -10,18 +10,16 @@ type TasksResponse = {
 }
 
 
-const tasksEndpoint = `${environment.baseApiUrl}api/tasks`
-
 @Injectable({
   providedIn: 'root'
 })
 export class TaskService {
-   
+
 
   constructor(private httpClient: HttpClient) { }
 
   getTasks(): Observable<TasksResponse> {
-    return this.httpClient.get<TasksResponse>(tasksEndpoint)
+    return this.httpClient.get<TasksResponse>(`${environment.baseApiUrl}api/tasks`)
    }
 
 }

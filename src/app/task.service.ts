@@ -8,6 +8,9 @@ import { environment } from 'src/environments/environment';
 type TasksResponse = {
   tasks: Task[]
 }
+type TaskResponse = {
+  task:Task
+}
 
 
 @Injectable({
@@ -20,6 +23,11 @@ export class TaskService {
 
   getTasks(): Observable<TasksResponse> {
     return this.httpClient.get<TasksResponse>(`${environment.baseApiUrl}api/tasks`)
-   }
+  }
+  postTaskList(task: Task): Observable<Task> {
+    return this.httpClient
+      .post<Task>(`${environment.baseApiUrl}api/tasks`,task)
+      .pipe(map((response: Task) => response));
+  }
 
 }

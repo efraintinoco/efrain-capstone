@@ -45,14 +45,7 @@ export class PopupComponent implements OnInit {
       (error: any) => console.error(error)
     );
   }
-  updateTask() {
-    this.taskService.updateTask(this.taskForm.value).subscribe(
-      (d) => {
-        this.dialogRef.close();
-      },
-      (error) => console.error(error)
-    );
-  }
+ 
 
   onDeleteTask() {
     this.taskService.deleteTask(this.data.id).subscribe(

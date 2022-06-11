@@ -29,19 +29,14 @@ export class TaskService {
       .post<Task>(`${environment.baseApiUrl}api/tasks`,task)
       .pipe(map((response: Task) => response));
   }
-  getTaskById(id: string): Observable<Task> {
-    return this.httpClient
-      .get<Task>(`${environment.baseApiUrl}api/tasks${id}`)
-      .pipe(map((response: Task) => response));
-  }
 
-  deleteTask(id: string) {
-    return this.httpClient.delete(`${environment.baseApiUrl}api/tasks${id}`);
+  deleteTask(id: number) {
+    return this.httpClient.delete<Task>(`${environment.baseApiUrl}api/tasks/${id}`);
   }
-
-  updateTask(task: Task): Observable<Task> {
+  
+  getTaskById(id: number): Observable<Task> {
     return this.httpClient
-      .put<Task>(`${environment.baseApiUrl}api/tasks`,task)
+      .get<Task>(`${environment.baseApiUrl}api/tasks/${id}`)
       .pipe(map((response: Task) => response));
   }
 

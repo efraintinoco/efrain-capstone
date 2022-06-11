@@ -3,6 +3,7 @@ import { TaskService } from '../task.service';
 import { Task } from '../Task';
 import { observable } from 'rxjs';
 import { PopupComponent } from '../popup/popup.component';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -14,12 +15,22 @@ export class ListTasksComponent implements OnInit {
   tasks: Task[] =  [];
 
 
-  constructor(private taskService: TaskService) { }
+  constructor(private taskService: TaskService, public dialog:MatDialog) { }
 
   ngOnInit(): void {
     this.taskService.getTasks().subscribe(response => {
       this.tasks = response.tasks
     });
-    
+  }
+  onOpenDialog(task: Task) {
+    const dialogRef = this.dialog.open(PopupComponent, {
+      data: task,
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log("the dialoged closed")
+
+    });
+  
   }
 }

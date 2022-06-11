@@ -1,6 +1,6 @@
 
 export interface Task {
-  id?: number,
+  id?: any,
   title: string,
   comment: string,
   complete: boolean,

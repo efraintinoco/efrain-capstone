@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../task.service';
 import { Task } from '../Task';
-import { observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { PopupComponent } from '../popup/popup.component';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -18,13 +18,13 @@ export class ListTasksComponent implements OnInit {
   constructor(private taskService: TaskService, public dialog:MatDialog) { }
 
   ngOnInit(): void {
-    this.taskService.getTasks().subscribe(response => {
-      this.tasks = response.tasks
-    });
+    
     this.getTasks();
   }
   getTasks() {
-
+return  this.taskService.getTaskList().subscribe(response => {
+  this.tasks = response.tasks
+});
   }
   onOpenDialog(task: Task) {
     const dialogRef = this.dialog.open(PopupComponent, {

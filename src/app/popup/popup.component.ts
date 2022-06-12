@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Task } from '../Task';
 import { TaskService } from '../task.service';
+import { Router } from '@angular/router';
 
 
 
@@ -18,7 +19,8 @@ export class PopupComponent implements OnInit {
     public dialogRef: MatDialogRef<PopupComponent>,
     @Inject(MAT_DIALOG_DATA) public data: Task,
     private fb: FormBuilder,
-    private taskService: TaskService
+    private taskService: TaskService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -58,6 +60,8 @@ export class PopupComponent implements OnInit {
       (d) => {
         console.log(d);
         this.dialogRef.close();
+        this.router.navigateByUrl('/');
+        
       },
       (error) => console.error(error)
     );

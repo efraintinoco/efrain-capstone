@@ -21,6 +21,10 @@ export class ListTasksComponent implements OnInit {
     this.taskService.getTasks().subscribe(response => {
       this.tasks = response.tasks
     });
+    this.getTasks();
+  }
+  getTasks() {
+
   }
   onOpenDialog(task: Task) {
     const dialogRef = this.dialog.open(PopupComponent, {
@@ -29,8 +33,9 @@ export class ListTasksComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe((result) => {
       console.log("the dialoged closed")
+      this.getTasks();
 
     });
-  
+
   }
 }

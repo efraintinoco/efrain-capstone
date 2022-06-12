@@ -24,7 +24,7 @@ export class TaskService {
   getTasks(): Observable<TasksResponse> {
     return this.httpClient.get<TasksResponse>(`${environment.baseApiUrl}api/tasks`)
   }
-  getTaskList(task: Task): Observable<Task> {
+  postTaskList(task: Task): Observable<Task> {
     return this.httpClient
       .post<Task>(`${environment.baseApiUrl}api/tasks`,task)
       .pipe(map((response: Task) => response));

@@ -26,9 +26,8 @@ export class AddTaskComponent implements OnInit {
     });
 
   }
-
   addTask() {
-    this.taskService.getTaskList(this.taskForm.value).subscribe(
+    this.taskService.postTaskList(this.taskForm.value).subscribe(
       (response) => {
         console.log(response);
         this.router.navigateByUrl('/');

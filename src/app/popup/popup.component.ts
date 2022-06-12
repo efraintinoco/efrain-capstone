@@ -24,9 +24,9 @@ export class PopupComponent implements OnInit {
   ngOnInit(): void {
     this.taskForm = this.fb.group({
       title: ['', Validators.required],
-      dueDate: ['', Validators.required],
-      type: ['', Validators.required],
-      description: ['', Validators.required],
+      comment: ['', Validators.required],
+      date: ['', Validators.required],
+
     });
 
     this.popupTask();
@@ -37,15 +37,21 @@ export class PopupComponent implements OnInit {
       (d: Task) => {
         this.taskForm.controls['title'].setValue(d.title);
         this.taskForm.controls['comment'].setValue(d.comment);
-        this.taskForm.controls['date'].setValue(
-          new Date(d.date).toISOString()
-        );
-        this.taskForm.controls['comment'].setValue(d.comment);
+        this.taskForm.controls['date'].setValue(d.date);
+
       },
-      (error: any) => console.error(error)
+      (error) => console.error(error)
     );
   }
- 
+  updateTask() {
+    this.taskService.updateTask(this.taskForm.value, this.data.id).subscribe(
+      (d) => {
+        this.dialogRef.close();
+      },
+      (error) => console.error(error)
+    );
+  }
+
 
   onDeleteTask() {
     this.taskService.deleteTask(this.data.id).subscribe(

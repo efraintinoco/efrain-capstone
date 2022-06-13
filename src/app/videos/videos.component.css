@@ -2,7 +2,7 @@
 
   .video-1-container{
     position: relative;
-    width: 100%;
+    width: 98%;
     padding-bottom: 56%;
     height: 0;
     margin-bottom: 35px;
@@ -12,12 +12,14 @@
     position: absolute;
     top:0;
     left: 0;
-    width: 100%;
+    width: 97.5%;
     height: 100%;
+    padding-left: 10px;
+    
   }
   .video-2-container{
     position: relative;
-    width: 100%;
+    width: 98%;
     padding-bottom: 56%;
     height: 0;
     margin-bottom: 35px;
@@ -27,13 +29,14 @@
     position: absolute;
     top:0;
     left: 0;
-    width: 100%;
+    width: 97.5%;
     height: 100%;
+    padding-left: 10px;
   }
 
   .video-3-container{
     position: relative;
-    width: 100%;
+    width: 98%;
     padding-bottom: 56%;
     height: 0;
     margin-bottom: 35px;
@@ -42,6 +45,7 @@
     position: absolute;
     top:0;
     left: 0;
-    width: 100%;
+    width: 97.5%;
     height: 100%;
+    padding-left: 10px;
   }

@@ -6,3 +6,15 @@ mat-form-field
 button{
   margin-left: 10px;
 }
+h1{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+  color:hsl(208, 77%, 15%) ;
+  background-color: #f3f5fa;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 3px;
+}
+

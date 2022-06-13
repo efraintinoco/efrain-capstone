@@ -2,3 +2,8 @@
   display: flex;
   justify-content: space-between;
 }
+mat-form-field{
+  display: block;
+  padding-top: 10px;
+}
+

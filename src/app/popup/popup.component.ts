@@ -4,6 +4,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Task } from '../Task';
 import { TaskService } from '../task.service';
 import { Router } from '@angular/router';
+import { of } from 'rxjs';
 
 
 
@@ -13,7 +14,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./popup.component.css'],
 })
 export class PopupComponent implements OnInit {
-  taskForm: FormGroup | any;
+  taskForm: FormGroup ;
   tasks: Task[] =  [];
   constructor(
     public dialogRef: MatDialogRef<PopupComponent>,
@@ -25,25 +26,22 @@ export class PopupComponent implements OnInit {
 
   ngOnInit(): void {
     this.taskForm = this.fb.group({
-      title: ['', Validators.required],
-      comment: ['', Validators.required],
       date: ['', Validators.required],
+      comment: ['', Validators.required],
 
     });
-
+    console.log()
     this.popupTask();
   }
 
   popupTask() {
     this.taskService.getTaskById(this.data.id).subscribe(
       (d: Task) => {
-        this.taskForm.controls['title'].setValue(d.title);
-        this.taskForm.controls['comment'].setValue(d.comment);
-        this.taskForm.controls['date'].setValue(d.date);
-
-      },
-      (error) => console.error(error)
-    );
+      
+      this.taskForm.controls['date'].setValue(d.date);
+      this.taskForm.controls['comment'].setValue(d.comment)
+    })
+    console.log(this.data)
   }
   updateTask() {
     this.taskService.updateTask(this.taskForm.value, this.data.id).subscribe(
@@ -61,7 +59,7 @@ export class PopupComponent implements OnInit {
         console.log(d);
         this.dialogRef.close();
         this.router.navigateByUrl('/');
-        
+
       },
       (error) => console.error(error)
     );

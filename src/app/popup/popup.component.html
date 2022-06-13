@@ -7,21 +7,15 @@
 
 <div class="add-task">
   <div class="content">
-    <form [formGroup]="taskForm">
-      <mat-form-field>
-        <mat-label>Title</mat-label>
-        <input matInput placeholder="Title" formControlName="title" />
-      </mat-form-field>
-
-
-      <mat-form-field appearance="fill">
-        <mat-label>Due date</mat-label>
+    <form [formGroup]="taskForm" (click)="updateTask()">
+        <mat-form-field appearance="fill">
+        <mat-label>Date</mat-label>
         <input matInput [matDatepicker]="picker" formControlName="date" />
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
       <mat-form-field>
-        <mat-label>Description</mat-label>
+        <mat-label>Comments</mat-label>
         <textarea
           matInput
           placeholder="Comment"

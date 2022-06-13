@@ -2,6 +2,7 @@ mat-form-field
 {
   margin-right: 20px;
   margin-left: 10px;
+  display: block;
 }
 button{
   margin-left: 10px;

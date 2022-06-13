@@ -8,3 +8,10 @@
 .header h1 {
   padding: 20px 12px 20px 12px;
 }
+button{
+display: block;
+margin-bottom: 20px;
+}
+mat-form-field{
+  display: block;
+}

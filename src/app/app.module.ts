@@ -25,6 +25,7 @@ import { HeaderComponent } from './header/header.component';
 import { VideosComponent } from './videos/videos.component';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { WeatherWidgetComponent } from './weather-widget/weather-widget.component';
+import { SeatingComponent } from './seating/seating.component';
 
 
 
@@ -40,6 +41,7 @@ import { WeatherWidgetComponent } from './weather-widget/weather-widget.componen
     VideosComponent,
     AddTaskComponent,
     WeatherWidgetComponent,
+    SeatingComponent,
   ],
   imports: [
     BrowserModule,

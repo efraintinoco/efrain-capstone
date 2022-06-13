@@ -1,0 +1,15 @@
+.seating-info{
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 4px;
+  height: 35px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 0%, rgb(9,42,70) 100%);
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}

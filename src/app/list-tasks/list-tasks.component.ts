@@ -18,7 +18,7 @@ export class ListTasksComponent implements OnInit {
   constructor(private taskService: TaskService, public dialog:MatDialog) { }
 
   ngOnInit(): void {
-    
+
     this.getTasks();
   }
   getTasks() {

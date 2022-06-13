@@ -24,11 +24,13 @@ export class TaskService {
   getTaskList(): Observable<TasksResponse> {
     return this.httpClient.get<TasksResponse>(`${environment.baseApiUrl}api/tasks`)
   }
+  
   postTaskList(task: Task): Observable<Task> {
     return this.httpClient
       .post<Task>(`${environment.baseApiUrl}api/tasks`,task)
       .pipe(map((response: Task) => response));
   }
+
   updateTask(task: Task, id: number): Observable<Task> {
     return this.httpClient
       .put<Task>(`${environment.baseApiUrl}api/tasks/${id}`, task)

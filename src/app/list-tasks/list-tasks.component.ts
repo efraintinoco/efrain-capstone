@@ -5,7 +5,6 @@ import { Observable } from 'rxjs';
 import { PopupComponent } from '../popup/popup.component';
 import { MatDialog } from '@angular/material/dialog';
 
-
 @Component({
   selector: 'app-list-tasks',
   templateUrl: './list-tasks.component.html',
@@ -13,7 +12,6 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class ListTasksComponent implements OnInit {
   tasks: Task[] =  [];
-
 
   constructor(private taskService: TaskService, public dialog:MatDialog) { }
 
@@ -28,7 +26,7 @@ return  this.taskService.getTaskList().subscribe(response => {
   }
   onOpenDialog(task: Task) {
     const dialogRef = this.dialog.open(PopupComponent, {
-    
+
       data: task,
 
     });
@@ -36,8 +34,6 @@ return  this.taskService.getTaskList().subscribe(response => {
     dialogRef.afterClosed().subscribe((result) => {
       console.log("the dialoged closed")
       this.getTasks();
-
     });
-
   }
 }

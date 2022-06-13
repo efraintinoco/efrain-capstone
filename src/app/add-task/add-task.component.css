@@ -10,8 +10,14 @@
 }
 button{
 display: block;
-margin-bottom: 20px;
+
 }
 mat-form-field{
   display: block;
+}
+.add-task{
+  height: 250px;
+}
+.datepicker{
+  
 }

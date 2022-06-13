@@ -1,12 +1,9 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Task } from '../Task';
 import { TaskService } from '../task.service';
 import { Router } from '@angular/router';
-import { of } from 'rxjs';
-
-
 
 @Component({
   selector: 'app-popup',
@@ -50,8 +47,8 @@ export class PopupComponent implements OnInit {
       },
       (error) => console.error(error)
     );
+    this.router.navigateByUrl('/');
   }
-
 
   onDeleteTask() {
     this.taskService.deleteTask(this.data.id).subscribe(
@@ -59,7 +56,6 @@ export class PopupComponent implements OnInit {
         console.log(d);
         this.dialogRef.close();
         this.router.navigateByUrl('/');
-
       },
       (error) => console.error(error)
     );

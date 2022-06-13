@@ -8,7 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog'
 
 
@@ -26,6 +26,7 @@ import { VideosComponent } from './videos/videos.component';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { WeatherWidgetComponent } from './weather-widget/weather-widget.component';
 import { SeatingComponent } from './seating/seating.component';
+import { AddSeatingComponent } from './add-seating/add-seating.component';
 
 
 
@@ -42,6 +43,7 @@ import { SeatingComponent } from './seating/seating.component';
     AddTaskComponent,
     WeatherWidgetComponent,
     SeatingComponent,
+    AddSeatingComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +59,7 @@ import { SeatingComponent } from './seating/seating.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatDialogModule,
+    FormsModule
 
   ],
   providers: [],

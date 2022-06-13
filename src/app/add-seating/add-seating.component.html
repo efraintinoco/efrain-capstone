@@ -1,0 +1,26 @@
+<div class="content">
+  <form [formGroup]="seatForm" (submit)="addSeating()">
+    <mat-form-field>
+      <mat-label>Section</mat-label>
+      <input matInput placeholder="Section" formControlName="section" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Row</mat-label>
+      <input matInput placeholder="Row" formControlName="row" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Seat</mat-label>
+      <input matInput placeholder="Seat" formControlName="seat" />
+    </mat-form-field>
+
+
+    <button
+      [disabled]="seatForm.invalid"
+      type="submit"
+      mat-raised-button
+      color="primary"
+    >
+      Submit
+    </button>
+  </form>
+</div>

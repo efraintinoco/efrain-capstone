@@ -17,6 +17,4 @@ export class WeatherWidgetComponent implements OnInit {
       console.log(this.weatherData)
     })
   }
-
-
 }

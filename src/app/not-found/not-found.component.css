@@ -1,0 +1,9 @@
+p{
+  padding: 10px;
+  color: hsl(208, 77%, 15%) ;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+a{
+  color: hsl(208, 77%, 35%) ;
+}

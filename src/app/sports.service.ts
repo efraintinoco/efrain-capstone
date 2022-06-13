@@ -15,5 +15,3 @@ export class SportsService {
     return this.httpclient.get<sportsData>('https://www.thesportsdb.com/api/v1/json/50130162/eventshighlights.php')
   }
 }
-
-

@@ -27,6 +27,7 @@ export class PopupComponent implements OnInit {
       title:['', Validators.required],
       date: ['', Validators.required],
       comment: [''],
+      id:['']
 
     });
     console.log()
@@ -38,14 +39,16 @@ export class PopupComponent implements OnInit {
       (d: Task) => {
         this.taskForm.controls['title'].setValue(this.data.title)
       this.taskForm.controls['date'].setValue(this.data.date);
-      this.taskForm.controls['comment'].setValue(this.data.comment)
+        this.taskForm.controls['comment'].setValue(this.data.comment)
+        this.taskForm.controls['id'].setValue(this.data.id)
     })
     console.log(this.data)
   }
   updateTask() {
     this.taskService.updateTask(this.taskForm.value, this.data.id).subscribe(
       () => {
-       this.dialogRef.close();
+        this.dialogRef.close();
+        this.router.navigateByUrl('/');
       })
 
   }

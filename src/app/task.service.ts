@@ -32,9 +32,8 @@ export class TaskService {
   }
 
   updateTask(task: Task, id: number): Observable<Task> {
-    return this.httpClient
-      .put<Task>(`${environment.baseApiUrl}api/tasks/${id}`, task)
-      .pipe(map((d: Task) => d));
+    return this.httpClient.put<Task>(`${environment.baseApiUrl}api/tasks/${id}`, task)
+
   }
 
   deleteTask(id: number) {
@@ -42,9 +41,8 @@ export class TaskService {
   }
 
   getTaskById(id: number): Observable<Task> {
-    return this.httpClient
-      .get<Task>(`${environment.baseApiUrl}api/tasks/${id}`)
-      .pipe(map((response: Task) => response));
+    return this.httpClient.get<Task>(`${environment.baseApiUrl}api/tasks/${id}`)
+
   }
 
 }

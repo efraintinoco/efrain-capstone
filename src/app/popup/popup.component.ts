@@ -13,7 +13,8 @@ import { Validators } from '@angular/forms';
 })
 export class PopupComponent implements OnInit {
   taskForm: FormGroup ;
-  tasks: Task[] =  [];
+  tasks: Task[] = [];
+
   constructor(
     public dialogRef: MatDialogRef<PopupComponent>,
     @Inject(MAT_DIALOG_DATA) public data: Task,
@@ -24,12 +25,12 @@ export class PopupComponent implements OnInit {
 
   ngOnInit(): void {
     this.taskForm = this.fb.group({
+      id:[''],
       title:['', Validators.required],
       date: ['', Validators.required],
       comment: [''],
-      id:['']
-
     });
+
     console.log()
     this.popupTask();
   }
@@ -37,10 +38,11 @@ export class PopupComponent implements OnInit {
   popupTask() {
     this.taskService.getTaskById(this.data.id).subscribe(
       (d: Task) => {
-        this.taskForm.controls['title'].setValue(this.data.title)
-      this.taskForm.controls['date'].setValue(this.data.date);
-        this.taskForm.controls['comment'].setValue(this.data.comment)
         this.taskForm.controls['id'].setValue(this.data.id)
+        this.taskForm.controls['title'].setValue(this.data.title)
+        this.taskForm.controls['date'].setValue(this.data.date);
+        this.taskForm.controls['comment'].setValue(this.data.comment)
+
     })
     console.log(this.data)
   }
@@ -48,9 +50,7 @@ export class PopupComponent implements OnInit {
     this.taskService.updateTask(this.taskForm.value, this.data.id).subscribe(
       () => {
         this.dialogRef.close();
-        this.router.navigateByUrl('/');
       })
-
   }
 
   onDeleteTask() {

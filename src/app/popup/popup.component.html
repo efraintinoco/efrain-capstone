@@ -7,7 +7,7 @@
 
 <div class="add-task">
   <div class="content">
-    <form [formGroup]="taskForm" >
+    <form [formGroup]="taskForm" (submit)="updateTask()">
 
       <mat-form-field>
         <mat-label>Title</mat-label>
@@ -30,7 +30,7 @@
       </mat-form-field>
       <button
         [disabled]="taskForm.invalid"
-        (click)="updateTask()"
+        type="submit"
         mat-raised-button
         color="primary"
       >

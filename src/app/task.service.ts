@@ -24,7 +24,7 @@ export class TaskService {
   getTaskList(): Observable<TasksResponse> {
     return this.httpClient.get<TasksResponse>(`${environment.baseApiUrl}api/tasks`)
   }
-  
+
   postTaskList(task: Task): Observable<Task> {
     return this.httpClient
       .post<Task>(`${environment.baseApiUrl}api/tasks`,task)

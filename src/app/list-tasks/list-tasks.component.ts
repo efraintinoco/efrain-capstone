@@ -25,8 +25,9 @@ return  this.taskService.getTaskList().subscribe(response => {
 });
   }
   onOpenDialog(task: Task) {
-    const dialogRef = this.dialog.open(PopupComponent, {
 
+    const dialogRef = this.dialog.open(PopupComponent, {
+      
       data: task,
 
     });

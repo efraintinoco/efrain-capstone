@@ -4,6 +4,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Task } from '../Task';
 import { TaskService } from '../task.service';
 import { Router } from '@angular/router';
+import { Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-popup',
@@ -23,8 +24,8 @@ export class PopupComponent implements OnInit {
 
   ngOnInit(): void {
     this.taskForm = this.fb.group({
-      title:[''],
-      date: [''],
+      title:['', Validators.required],
+      date: ['', Validators.required],
       comment: [''],
 
     });
@@ -43,22 +44,17 @@ export class PopupComponent implements OnInit {
   }
   updateTask() {
     this.taskService.updateTask(this.taskForm.value, this.data.id).subscribe(
-      (d) => {
-        this.dialogRef.close();
-      },
-      (error) => console.error(error)
-    );
-    this.router.navigateByUrl('/');
+      () => {
+       this.dialogRef.close();
+      })
+
   }
 
   onDeleteTask() {
     this.taskService.deleteTask(this.data.id).subscribe(
       (d) => {
-        console.log(d);
         this.dialogRef.close();
         this.router.navigateByUrl('/');
-      },
-      (error) => console.error(error)
-    );
+      });
   }
 }

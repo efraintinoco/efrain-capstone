@@ -18,7 +18,8 @@
           </span>
         </div>
         <span class="task-comment">
-          {{ task.comment}}
+          {{ task.comment.substring(0, 12) }}
+          {{ task.comment.length > 12 ? "..." : "" }}
         </span>
       </mat-list-option>
     </div>

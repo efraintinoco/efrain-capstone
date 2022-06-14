@@ -23,6 +23,7 @@ export class PopupComponent implements OnInit {
 
   ngOnInit(): void {
     this.taskForm = this.fb.group({
+      title:[''],
       date: [''],
       comment: [''],
 
@@ -34,9 +35,9 @@ export class PopupComponent implements OnInit {
   popupTask() {
     this.taskService.getTaskById(this.data.id).subscribe(
       (d: Task) => {
-
-      this.taskForm.controls['date'].setValue(d.date);
-      this.taskForm.controls['comment'].setValue(d.comment)
+        this.taskForm.controls['title'].setValue(this.data.title)
+      this.taskForm.controls['date'].setValue(this.data.date);
+      this.taskForm.controls['comment'].setValue(this.data.comment)
     })
     console.log(this.data)
   }

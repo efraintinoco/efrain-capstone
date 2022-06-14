@@ -8,6 +8,11 @@
 <div class="add-task">
   <div class="content">
     <form [formGroup]="taskForm" (click)="updateTask()">
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Title" formControlName="title" />
+      </mat-form-field>
+
         <mat-form-field appearance="fill">
         <mat-label>Date</mat-label>
         <input matInput [matDatepicker]="picker" formControlName="date" />
@@ -18,7 +23,7 @@
         <mat-label>Comments</mat-label>
         <textarea
           matInput
-          placeholder="Comment"
+          placeholder="Comments"
           formControlName="comment"
         ></textarea>
       </mat-form-field>

@@ -1,13 +1,12 @@
   <h1>Soccer Scores:</h1>
 <ul>
   <li *ngFor="let soccer of soccerData">
-    
-    <div>
 
-      <img width="5%" src="{{soccer.strHomeTeamBadge}}" alt="{{soccer.strHomeTeam}}"> <img width="5%" src="{{soccer.strAwayTeamBadge}}" alt="{{soccer.strAwayTeam}}">
-   </div>
-   <div>
-      <span>{{soccer.strHomeTeam}} vs {{soccer.strAwayTeam}}</span>
-  </div>
+    <div class="team-listing">
+      <img  class="team-badge" width="5%" src="{{soccer.strHomeTeamBadge}}" alt="{{soccer.strHomeTeam}}"> <img width="5%" src="{{soccer.strAwayTeamBadge}}" alt="{{soccer.strAwayTeam}}">
+      <div class="team-name">{{soccer.strHomeTeam}} vs {{soccer.strAwayTeam}}</div>
+      <span class="team-score">{{soccer.intHomeScore}}</span> <span>{{soccer.intAwayScore}}</span>
+      <p>{{soccer.updated | date: "medium"}}</p>
+    </div>
   </li>
 </ul>

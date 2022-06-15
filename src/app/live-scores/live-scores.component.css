@@ -1,7 +1,15 @@
-ul{
-  display: grid;
- 
+h1{
+  padding-left: 16px;
+  padding-top: 20px;
+}
+li{
+  list-style: none;
+}
+.team-listing{
 
-
-
+}
+.updated{
+  padding-left: 27px;
+  line-height: 2em;
+  padding-bottom: 10px;
 }

@@ -16,7 +16,7 @@ export class VideosComponent implements OnInit {
 
   ngOnInit(): void {
     this.sportsService.getSports().subscribe(response => {
-      this.sportData = response
+      this.sportData = response.tvhighlights
       console.log(this.sportData)
     })
   }

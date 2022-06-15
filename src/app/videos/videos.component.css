@@ -1,53 +1,19 @@
 
-
-  .video-1-container{
-    position: relative;
-    width: 98%;
-    padding-bottom: 56%;
-    height: 0;
-    margin-bottom: 35px;
+  li{
+    list-style: none;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: medium;
+  }
+  span{
+    color: hsl(208, 77%, 35%);
+    line-height: 2em;
+    text-align: center;
 
   }
-  .video-1-container iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 97.5%;
-    height: 100%;
+  ul{
     padding-left: 10px;
-
-
-  }
-  .video-2-container{
-    position: relative;
-    width: 98%;
-    padding-bottom: 56%;
-    height: 0;
-    margin-bottom: 35px;
-  }
-
-  .video-2-container iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 97.5%;
-    height: 100%;
-    padding-left: 10px;
-  }
-
-  .video-3-container{
-    position: relative;
-    width: 98%;
-    padding-bottom: 56%;
-    height: 0;
-    margin-bottom: 35px;
-  }
-  .video-3-container iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 97.5%;
-    height: 100%;
-    padding-left: 10px;
-    padding-bottom: 30px;
+    padding-right: 10px;
   }

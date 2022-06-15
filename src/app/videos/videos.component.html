@@ -1,37 +1,10 @@
 
-<div class="video-1-container">
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/vfhGmT0y9mg"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write;
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-</div>
-<div class="video-2-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/xUAGXlZ2JIY" title="YouTube video player"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-   encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<div class="video-3-container">
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/MLVnGGzgTGc"
-    title="YouTube video player" frameborder="0" allow="accelerometer;
-    autoplay; clipboard-write; encrypted-media;
-    gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
-</div>
-<div class="video-3-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/_rkmFmMy8Kg"
-  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-   clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<div class="video-3-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/ixx3wRfAjyY"
-  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<div class="video-3-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zP4t2ua_kPs"
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<ul>
+  <li *ngFor="let highlight of sportData">
+    <span>{{highlight.strEvent}} - {{highlight.dateEvent | date: "mediumDate" }}</span>
+    <a href="{{highlight.strVideo}}" title="{{highlight.strEvent}}" target="_blank" rel="noopener">
+      <img src="{{highlight.strThumb}}/preview" style="width: 100%;"></a>
+
+  </li>
+</ul>
+

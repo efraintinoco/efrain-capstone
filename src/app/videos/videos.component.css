@@ -1,8 +1,7 @@
 
   li{
     list-style: none;
-    padding-top: 20px;
-    margin-bottom: 5px;
+    padding-top: 10px;
     text-align: center;
     font-weight: 500;
     font-size: medium;
@@ -17,3 +16,8 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+.youtube{
+  width: 18%;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}

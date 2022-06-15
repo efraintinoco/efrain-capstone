@@ -9,15 +9,15 @@ import { SportsService } from '../sports.service';
   styleUrls: ['./videos.component.css']
 })
 export class VideosComponent implements OnInit {
-  sportData: any
+  sportsData: any
 
 
   constructor(private sportsService: SportsService) { }
 
   ngOnInit(): void {
     this.sportsService.getSports().subscribe(response => {
-      this.sportData = response.tvhighlights
-      console.log(this.sportData)
+      this.sportsData = response.tvhighlights
+      
     })
   }
 

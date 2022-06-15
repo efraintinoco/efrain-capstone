@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable,map } from 'rxjs';
 
 type sportsData = any
+type soccerData = any
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +15,9 @@ export class SportsService {
   getSports(): Observable<sportsData> {
     return this.httpclient.get<sportsData>('https://www.thesportsdb.com/api/v1/json/50130162/eventshighlights.php')
     .pipe(map((response: sportsData) => response));
+  }
+  getSoccerScores(): Observable<soccerData> {
+    return this.httpclient.get<soccerData>('https://www.thesportsdb.com/api/v2/json/50130162/livescore.php?s=Soccer')
+    .pipe(map((response: soccerData) => response));
   }
 }

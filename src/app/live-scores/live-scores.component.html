@@ -1,0 +1,13 @@
+  <h1>Soccer Scores:</h1>
+<ul>
+  <li *ngFor="let soccer of soccerData">
+    
+    <div>
+
+      <img width="5%" src="{{soccer.strHomeTeamBadge}}" alt="{{soccer.strHomeTeam}}"> <img width="5%" src="{{soccer.strAwayTeamBadge}}" alt="{{soccer.strAwayTeam}}">
+   </div>
+   <div>
+      <span>{{soccer.strHomeTeam}} vs {{soccer.strAwayTeam}}</span>
+  </div>
+  </li>
+</ul>

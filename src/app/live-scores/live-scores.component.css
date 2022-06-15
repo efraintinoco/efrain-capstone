@@ -1,0 +1,7 @@
+ul{
+  display: grid;
+ grid-auto-columns: 5fr;
+ grid-template-rows: 2fr;
+
+
+}

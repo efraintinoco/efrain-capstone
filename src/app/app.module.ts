@@ -27,6 +27,7 @@ import { AddTaskComponent } from './add-task/add-task.component';
 import { WeatherWidgetComponent } from './weather-widget/weather-widget.component';
 import { SeatingComponent } from './seating/seating.component';
 import { AddSeatingComponent } from './add-seating/add-seating.component';
+import { LiveScoresComponent } from './live-scores/live-scores.component';
 
 
 
@@ -44,6 +45,7 @@ import { AddSeatingComponent } from './add-seating/add-seating.component';
     WeatherWidgetComponent,
     SeatingComponent,
     AddSeatingComponent,
+    LiveScoresComponent,
   ],
   imports: [
     BrowserModule,

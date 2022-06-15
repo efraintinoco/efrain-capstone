@@ -6,6 +6,10 @@ li{
   list-style: none;
 }
 .team-listing{
+  max-width: 50%;
+  display: grid;
+  grid-template-columns: 50px  1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
 
 }
 .updated{
@@ -13,3 +17,4 @@ li{
   line-height: 2em;
   padding-bottom: 10px;
 }
+

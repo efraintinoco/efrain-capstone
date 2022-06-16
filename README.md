@@ -1,27 +1,29 @@
-# Capstone
+# GameDay Ready
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+Hello everyone ! Welcome to my GameDay Ready app. As a passionate sports fan, there is nothing I love more than going out to 
+catch a game in person. But its not just the action on the field that I love, it’s the entire game day experience that comes with 
+it. When things go as planned, the entire Game Day experience becomes is a day to remember! The GameDay ready app helps ensure that 
+everything turns out as planned and the GameDay experience is just as special as the action on the field!
 
-## Development server
+## App details / features
+From the home page, you are able to review any items or list of things to do that are need to ensure a great day experience. You are also able
+to view real time weather information, to esure you are not caught unprepared. 
+<br>
+<img src="https://i2.paste.pics/1c9a4f40cf6bd7ecb97f4a9ab911203b.png" width="606" height="849" alt="GameDay Ready App Home Page">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<br>
+<br>
 
-## Code scaffolding
+Another great feature of the GameDay Ready app, is that you will have access to real time Scores and Highlights at your finger tips. 
+From the Sports Central Tab , you will be able to view real time scores and even highlight videos from other sporting events !
+<br>
+<img src="https://i2.paste.pics/c4b21f8ad3019d2517ab071e0f8c9a04.png" width="585" height="869" alt="Sports Central Page">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Links
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Deployed App link - `https://eclectic-scone-824809.netlify.app/`
 
-## Running unit tests
+Deployed Api Link - `https://etinococapstone.herokuapp.com/`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+API GitHub Link - `https://github.com/efraintinoco/tasksapi`

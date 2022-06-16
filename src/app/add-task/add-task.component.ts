@@ -26,6 +26,7 @@ export class AddTaskComponent implements OnInit {
     });
 
   }
+  
   addTask() {
     this.taskService.postTaskList(this.taskForm.value).subscribe(
       (response) => {

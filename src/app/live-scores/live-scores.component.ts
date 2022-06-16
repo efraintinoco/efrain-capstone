@@ -23,7 +23,5 @@ export class LiveScoresComponent implements OnInit {
       console.log(this.baseballData)
     })
   }
-
-
 }
 

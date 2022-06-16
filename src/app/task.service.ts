@@ -17,12 +17,10 @@ type TaskResponse = {
   task:Task
 }
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class TaskService {
-
 
   constructor(private httpClient: HttpClient) { }
 
@@ -42,13 +40,10 @@ export class TaskService {
   updateTask(task: Task, id: number): Observable<Task> {
     return this.httpClient.put<Task>(`${environment.baseApiUrl}api/tasks/${id}`, task, httpheaders)
     .pipe(map((response: Task) => response));
-
   }
 
   getTaskById(id: number): Observable<Task> {
     return this.httpClient.get<Task>(`${environment.baseApiUrl}api/tasks/${id}`)
     .pipe(map((response: Task) => response));
-
   }
-
 }

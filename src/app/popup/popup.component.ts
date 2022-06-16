@@ -46,11 +46,12 @@ export class PopupComponent implements OnInit {
     })
     console.log(this.data)
   }
+
   updateTask() {
     this.taskService.updateTask(this.taskForm.value, this.data.id).subscribe(
       () => {
         this.dialogRef.close();
-      })
+    })
   }
 
   onDeleteTask() {
@@ -58,6 +59,6 @@ export class PopupComponent implements OnInit {
       (d) => {
         this.dialogRef.close();
         this.router.navigateByUrl('/');
-      });
+    });
   }
 }

@@ -1,6 +1,4 @@
 <app-live-scores></app-live-scores>
-
-
 <ul>
   <li *ngFor="let highlight of sportsData">
     <span>{{highlight.strEvent}} - {{highlight.dateEvent | date: "mediumDate" }}</span>
@@ -8,6 +6,5 @@
       <img src="{{highlight.strThumb}}/preview" style="width: 100%;"></a>
       <a href="{{highlight.strVideo}}"><img class="youtube" src="assets/Youtube.JPG" ></a>
   </li>
-
 </ul>
 

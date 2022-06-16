@@ -6,17 +6,20 @@
   margin: 0px;
   text-align: center;
 }
+
 .list {
   background: #f3f5fa;
   margin-bottom: 65px;
 }
+
 mat-selection-list {
   height: 100%;
 }
+
 .mat-list-option-cover {
   padding: 15px;
-
 }
+
 mat-list-option {
   background-color: white;
   border-radius: 3px;
@@ -24,7 +27,6 @@ mat-list-option {
   padding: 10px;
   height: 100%;
   width: 100%;
-
 }
 
 .mat-list-item {
@@ -32,6 +34,7 @@ mat-list-option {
   box-shadow: 5px 5px #e8e8e8;
   margin-bottom: 15px;
 }
+
 .task-date{
   color: rgb(150, 149, 149);
   float: right;
@@ -44,4 +47,3 @@ color:hsl(208, 77%, 15%) ;
 .task-comment{
 color: hsl(208, 77%, 35%);
 }
-

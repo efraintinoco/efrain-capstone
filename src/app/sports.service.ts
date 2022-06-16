@@ -11,7 +11,6 @@ type baseballData = any
 })
 export class SportsService {
 
-
   constructor(private httpclient: HttpClient) { }
   getSports(): Observable<sportsData> {
     return this.httpclient.get<sportsData>('https://www.thesportsdb.com/api/v1/json/50130162/eventshighlights.php')
@@ -25,6 +24,4 @@ export class SportsService {
     return this.httpclient.get<baseballData>('https://www.thesportsdb.com/api/v2/json/50130162/livescore.php?l=4424')
     .pipe(map((response: baseballData) => response));
   }
-
-
 }

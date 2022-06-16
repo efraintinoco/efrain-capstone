@@ -5,5 +5,4 @@ export interface Task {
   comment: string,
   complete: boolean,
   date: string,
-
 }

@@ -6,16 +6,18 @@
     font-weight: 500;
     font-size: medium;
   }
+
   span{
     color: hsl(208, 77%, 35%);
     line-height: 2em;
     text-align: center;
-
   }
+
   ul{
     padding-left: 10px;
     padding-right: 10px;
   }
+
 .youtube{
   width: 18%;
   padding-top: 5px;

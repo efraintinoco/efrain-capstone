@@ -23,3 +23,13 @@
   padding-top: 5px;
   padding-bottom: 15px;
 }
+
+h1{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: rgb(243,245,250);
+    border-radius:3px;
+    padding-left: 12.5px;
+}

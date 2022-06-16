@@ -6,3 +6,21 @@ mat-form-field{
   display: block;
   padding-top: 10px;
 }
+.delete{
+   color: rgb(240, 43, 43);
+
+}
+
+.update{
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+  font-size: 13.5px;
+  margin-top: 7px;
+  width: 80px;
+  color:  hsl(208, 77%, 15%);
+}
+
+h1{
+  color: hsl(208, 77%, 15%);
+}
+

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, FormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,11 +12,7 @@ export class AddSeatingComponent implements OnInit {
 
   section = "";
 
-  constructor(
-    private fb: FormBuilder,
-
-    private router: Router
-  ) {}
+  constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
     this.seatForm = this.fb.group({
@@ -26,9 +22,8 @@ export class AddSeatingComponent implements OnInit {
     });
 
   }
+
   addSeating() {
     return this.seatForm.value
-
   }
-
 }

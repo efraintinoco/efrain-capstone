@@ -3,7 +3,6 @@
 }
 
 h1 {
-
   color:hsl(208, 77%, 15%) ;
   background-color:   #f3f5fa;
   margin-left: 10px;
@@ -13,6 +12,7 @@ h1 {
   padding-left: 15px;
   border-radius: 3px;
 }
+
 button{
   display: block;
   padding-top: 3.5px;
@@ -21,16 +21,16 @@ button{
   margin-top: 7px;
   width: 80px;
   color:  hsl(208, 77%, 15%);
-
-
-
 }
+
 mat-form-field{
   display: block;
 }
+
 .add-task{
   height: 250px;
 }
+
 .seating{
   padding-bottom:20px;
 }

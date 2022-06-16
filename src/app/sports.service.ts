@@ -18,7 +18,7 @@ export class SportsService {
     .pipe(map((response: sportsData) => response));
   }
   getSoccerScores(): Observable<soccerData> {
-    return this.httpclient.get<soccerData>('https://www.thesportsdb.com/api/v2/json/50130162/livescore.php?s=Soccer')
+    return this.httpclient.get<soccerData>('https://www.thesportsdb.com/api/v2/json/50130162/livescore.php?s=soccer')
     .pipe(map((response: soccerData) => response));
   }
   getBaseballScores(): Observable<baseballData> {

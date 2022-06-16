@@ -1,11 +1,30 @@
-  <h1>Soccer Scores:</h1>
+
+  <h1>Baseball Scores:</h1>
+<div class="baseball-container">
+
+ <ul>
+   <li *ngFor="let baseball of baseballData">
+
+     <div class="team-listing">
+       <span><img  class="team-badge" width="50%" src="{{baseball.strHomeTeamBadge}}" alt="{{baseball.strHomeTeam}}"> </span><span class="home-name" >{{baseball.strHomeTeam}} </span> <span  style="font-weight:500" class="score">{{baseball.intHomeScore}}</span> <span><img width="50%" src="{{baseball.strAwayTeamBadge}}" alt="{{baseball.strAwayTeam}}"></span> <span class="away-name">{{baseball.strAwayTeam}} </span> <span style="font-weight:500"> {{baseball.intAwayScore}} </span>
+     </div>
+       <div style="font-size:13px; padding-bottom: 30px; " class="updated">Updated: {{baseball.updated | date: "short"}}</div>
+
+   </li>
+ </ul>
+ </div>
+
+ <h1>Soccer Scores:</h1>
+ <div class="soccer-container">
+
 <ul>
   <li *ngFor="let soccer of soccerData">
-    <div class="score-container">
-    <div class="team-listing">
-      <span><img  class="team-badge" width="50%" src="{{soccer.strHomeTeamBadge}}" alt="{{soccer.strHomeTeam}}"> </span><span class="home-name">{{soccer.strHomeTeam}} - </span> <span class="score">({{soccer.intHomeScore}})</span> <span><img width="50%" src="{{soccer.strAwayTeamBadge}}" alt="{{soccer.strAwayTeam}}"></span> <span class="away-name">{{soccer.strAwayTeam}} - </span> <span> ({{soccer.intAwayScore}}) </span>
-    </div>
-      <div class="updated">Updated: {{soccer.updated | date: "medium"}}</div>
-    </div>
+
+        <div class="team-listing">
+              <span><img  class="team-badge" width="50%" src="{{soccer.strHomeTeamBadge}}" alt="{{soccer.strHomeTeam}}"> </span><span class="home-name">{{soccer.strHomeTeam}} </span> <span  style="font-weight:500" class="score">{{soccer.intHomeScore}}</span> <span><img width="50%" src="{{soccer.strAwayTeamBadge}}" alt="{{soccer.strAwayTeam}}"></span> <span class="away-name">{{soccer.strAwayTeam}} </span> <span style="font-weight:500"> {{soccer.intAwayScore}} </span>
+        </div>
+    <div style="font-size:13px; padding-bottom: 30px; " class="updated">Updated: {{soccer.updated | date: "short"}}</div>
+
   </li>
 </ul>
+</div>

@@ -1,20 +1,45 @@
 h1{
-  padding-left: 16px;
+  padding-left: 30px;
   padding-top: 20px;
 }
 li{
   list-style: none;
 }
 .team-listing{
-  max-width: 50%;
+  max-width: 80%;
   display: grid;
-  grid-template-columns: 50px  1fr 1fr ;
+  grid-template-columns: 50px  120px 45px ;
   grid-template-rows: 1fr 1fr;
+  padding-left: 0px;
+
 
 }
+
 .updated{
-  padding-left: 27px;
+  padding-left: 20px;
   line-height: 2em;
-  padding-bottom: 10px;
+
+
 }
 
+ul li{
+  display: inline-table;
+}
+ul{
+  display: inline-table;
+  margin-left: -10px;
+}
+.baseball-container{
+  color: hsl(208, 77%, 15%);
+  background-color: rgb(243,245,250);
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.soccer-container{
+  color: hsl(208, 77%, 15%);
+  background-color: rgb(243,245,250);
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+}

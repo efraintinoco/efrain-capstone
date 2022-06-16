@@ -1,29 +1,28 @@
 
-  <h1>Baseball Scores:</h1>
 <div class="baseball-container">
-
+  <h1>Baseball Scores:</h1>
  <ul>
    <li *ngFor="let baseball of baseballData">
 
      <div class="team-listing">
-       <span><img  class="team-badge" width="50%" src="{{baseball.strHomeTeamBadge}}" alt="{{baseball.strHomeTeam}}"> </span><span class="home-name" >{{baseball.strHomeTeam}} </span> <span  style="font-weight:500" class="score">{{baseball.intHomeScore}}</span> <span><img width="50%" src="{{baseball.strAwayTeamBadge}}" alt="{{baseball.strAwayTeam}}"></span> <span class="away-name">{{baseball.strAwayTeam}} </span> <span style="font-weight:500"> {{baseball.intAwayScore}} </span>
+       <span><img  class="team-badge" width="50%" src="{{baseball.strHomeTeamBadge}}" alt="{{baseball.strHomeTeam}}"> </span><span class="home-name" >{{baseball.strHomeTeam}} </span> <span  style="font-weight:500" class="score">{{baseball.intHomeScore}}</span> <span><img width="50%" src="{{baseball.strAwayTeamBadge}}" alt="{{baseball.strAwayTeam}}"></span> <span class="away-name">{{baseball.strAwayTeam}} </span> <span class="score" style="font-weight:500"> {{baseball.intAwayScore}} </span>
      </div>
-       <div style="font-size:13px; padding-bottom: 30px; " class="updated">Updated: {{baseball.updated | date: "short"}}</div>
+       <div style="font-size:11.5px;  " class="updated">Updated: {{baseball.updated | date: "short"}}</div>
 
    </li>
  </ul>
  </div>
 
- <h1>Soccer Scores:</h1>
+
  <div class="soccer-container">
 
 <ul>
   <li *ngFor="let soccer of soccerData">
 
         <div class="team-listing">
-              <span><img  class="team-badge" width="50%" src="{{soccer.strHomeTeamBadge}}" alt="{{soccer.strHomeTeam}}"> </span><span class="home-name">{{soccer.strHomeTeam}} </span> <span  style="font-weight:500" class="score">{{soccer.intHomeScore}}</span> <span><img width="50%" src="{{soccer.strAwayTeamBadge}}" alt="{{soccer.strAwayTeam}}"></span> <span class="away-name">{{soccer.strAwayTeam}} </span> <span style="font-weight:500"> {{soccer.intAwayScore}} </span>
+              <span><img  class="team-badge" width="50%" src="{{soccer.strHomeTeamBadge}}" alt="{{soccer.strHomeTeam}}"> </span><span class="home-name">{{soccer.strHomeTeam}} </span> <span  style="font-weight:500" class="score">{{soccer.intHomeScore}}</span> <span><img width="50%" src="{{soccer.strAwayTeamBadge}}" alt="{{soccer.strAwayTeam}}"></span> <span class="away-name">{{soccer.strAwayTeam}} </span> <span class="score" style="font-weight:500"> {{soccer.intAwayScore}} </span>
         </div>
-    <div style="font-size:13px; padding-bottom: 30px; " class="updated">Updated: {{soccer.updated | date: "short"}}</div>
+    <div style="font-size:11.5px;  " class="updated">Updated: {{soccer.updated | date: "short"}}</div>
 
   </li>
 </ul>
